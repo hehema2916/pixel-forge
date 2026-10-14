@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>像素工坊 PixelForge — 在线协作设计工具（结构演示站）</title>
+<meta name="description" content="结构演示站：信息架构参考公开案例的学习笔记，代码与文案均为原创。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%236366f1'/%3E%3Crect x='9' y='9' width='14' height='14' rx='4' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="announce" id="announce">
+  <div class="container">
+    <span>🎉 v3.2 发布：AI 布局助手与变体批处理上线</span>
+    <a href="#updates">查看更新 →</a>
+  </div>
+  <button class="announce-close" data-close-announce aria-label="关闭公告">×</button>
+</div>
+
+<!-- 顶部导航 -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a class="nav-logo" href="index.html"><span class="logo-mark"></span>像素工坊</a>
+    <button class="nav-burger" data-burger aria-label="打开菜单">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <div class="nav-item">
+        <button class="nav-link">产品 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="#features">功能总览<small>设计、协作、交付一体化</small></a>
+          <a href="download.html">下载客户端<small>Web / macOS / Windows</small></a>
+          <a href="#updates">更新日志<small>v3.2 已发布</small></a>
+          <a href="#" data-demo="演示站：企业版页面未接入">企业版<small>私有化部署与安全管控</small></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">资源 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="community.html">资源广场<small>模板 / 组件 / 图标</small></a>
+          <a href="community.html">插件广场<small>开放插件生态</small></a>
+          <a href="#" data-demo="演示站：组件库页面未接入">组件库<small>开箱即用的设计系统</small></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">学习 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="#" data-demo="演示站：公开课页面未接入">公开课<small>创作者精心策划的课程</small></a>
+          <a href="#" data-demo="演示站：临摹活动未接入">每周临摹<small>和设计师一起练手</small></a>
+          <a href="#" data-demo="演示站：打卡页面未接入">打卡星球<small>专题训练，养成技能</small></a>
+          <a href="#" data-demo="演示站：帮助中心未接入">帮助中心<small>使用指南与常见问题</small></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">社区 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="#" data-demo="演示站：文章频道未接入">最新文章<small>设计解析与行业洞察</small></a>
+          <a href="#" data-demo="演示站：活动中心未接入">活动中心<small>大赛 / 挑战 / 共创</small></a>
+          <a href="#" data-demo="演示站：创作者计划未接入">创作者计划<small>让作品被更多人看到</small></a>
+        </div>
+      </div>
+      <a class="nav-link" href="pricing.html">定价</a>
+      <a class="nav-link" href="compare.html">对比</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="login.html">登录</a>
+      <a class="btn btn-primary" href="login.html">免费使用</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="badge">⚡ 全新 AI 布局引擎</span>
+        <h1>更高效的<br><span class="grad-text">在线协作设计</span>平台</h1>
+        <p class="lead">从灵感、设计到交付，一支团队在一个文件里完成。像素工坊帮助产品团队更快地把想法变成界面。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="login.html">免费开始使用</a>
+          <a class="btn btn-outline btn-lg" href="download.html">下载客户端</a>
+        </div>
+        <p class="muted small">无需信用卡 · 支持 Web / macOS / Windows</p>
+      </div>
+
+      <!-- 编辑器模拟窗（纯 CSS 绘制，非真实截图） -->
+      <div class="hero-visual">
+        <div class="editor-mock">
+          <div class="em-titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="em-file">未命名项目 — 像素工坊</span>
+          </div>
+          <div class="em-body">
+            <div class="em-left">
+              <div class="em-label">图层</div>
+              <div class="layer active"><span class="swatch" style="background:#6366f1"></span>主卡片 / 变体 A</div>
+              <div class="layer"><span class="swatch" style="background:#22d3ee"></span>标题文字</div>
+              <div class="layer"><span class="swatch" style="background:#f59e0b"></span>按钮 / 主要</div>
+              <div class="layer"><span class="swatch" style="background:#10b981"></span>图标组</div>
+              <div class="em-label" style="margin-top:14px">页面</div>
+              <div class="layer">首页 v2</div>
+              <div class="layer">详情页</div>
+            </div>
+            <div class="em-canvas">
+              <div class="art-frame"></div>
+              <div class="art-card">
+                <div class="bar"></div>
+                <div class="bar short"></div>
+                <div class="swatchrow">
+                  <i style="background:#6366f1"></i><i style="background:#8b5cf6"></i>
+                  <i style="background:#22d3ee"></i><i style="background:#0f172a"></i>
+                </div>
+              </div>
+              <div class="art-selected"></div>
+              <span class="cursor-chip cursor-1">小马</span>
+              <span class="cursor-chip cursor-2">AI 助手</span>
+            </div>
+            <div class="em-right">
+              <div class="em-label">属性</div>
+              <div class="prop-row"><span>宽 / 高</span><span class="val">320 × 208</span></div>
+              <div class="prop-slider"><i></i></div>
+              <div class="prop-row"><span>圆角</span><span class="val">13 px</span></div>
+              <div class="prop-slider"><i style="width:34%"></i></div>
+              <div class="prop-row"><span>填充</span><span class="val">#6366F1</span></div>
+              <div class="swatches">
+                <i style="background:#6366f1"></i><i style="background:#8b5cf6"></i>
+                <i style="background:#22d3ee"></i><i style="background:#f59e0b"></i>
+              </div>
+              <div class="em-label">间距</div>
+              <div class="spacing-box">
+                <div>上<b>16</b></div><div>右<b>20</b></div><div>下<b>16</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据条 -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat"><b>120 万+</b><span>注册用户（演示数据）</span></div>
+      <div class="stat"><b>40 万+</b><span>社区资源</span></div>
+      <div class="stat"><b>400+</b><span>高校与团队在用</span></div>
+      <div class="stat"><b>99.99%</b><span>服务可用性</span></div>
+    </div>
+  </section>
+
+  <!-- 功能特性 -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <h2>一个文件，完成设计全流程</h2>
+        <p>从第一次拖拽到最终交付，团队需要的能力都在这里。</p>
+      </div>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>实时多人协作</h3>
+          <p>同一文件多人同时编辑，评论、圈选、@提醒，评审不用再截图传群。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧩</div>
+          <h3>组件与变体</h3>
+          <p>组件体系 + 变体批处理，改一处联动全站，设计系统长期可维护。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📐</div>
+          <h3>自动布局</h3>
+          <p>约束、栅格、自动布局与响应式预览，一次设计适配多端屏幕。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3>原型与交互</h3>
+          <p>连线原型、页面转场、滚动联动，两分钟做出可点可玩的演示。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>AI 设计助手</h3>
+          <p>AI 布局、文案填充、批量重命名与配色建议，把重复劳动交给机器。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔌</div>
+          <h3>开放插件体系</h3>
+          <p>40+ 插件覆盖标注、切图、数据填充、代码导出，也可自行开发。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作流程 -->
+  <section class="section alt" id="workflow">
+    <div class="container">
+      <div class="section-head">
+        <h2>从想法到上线，四步走完</h2>
+        <p>设计、评审、交付、对接各环节无缝衔接。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>开始设计</h3>
+          <p>从空白画布或 40 万+ 社区模板开始，组件与样式一次定义全站复用。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>协作评审</h3>
+          <p>邀请成员进入同一文件，评论定位到像素，版本历史随时回滚。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>交付标注</h3>
+          <p>一键生成标注与切图，间距、字号、颜色自动测量，尺寸自适应多端。</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>开发对接</h3>
+          <p>设计变量直出代码片段，研发按标注还原，走查差异一目了然。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 资源预览 -->
+  <section class="section" id="resources">
+    <div class="container">
+      <div class="section-head">
+        <h2>社区资源，开箱即用</h2>
+        <p>模板、组件、图标、插件，来自创作者社区每周精选。</p>
+      </div>
+      <div class="res-cards">
+        <a class="res-card" href="community.html">
+          <div class="res-cover c1"><span>后台管理系统模板</span></div>
+          <div class="res-meta"><b>模板精选</b><span>♥ 428</span></div>
+        </a>
+        <a class="res-card" href="community.html">
+          <div class="res-cover c2"><span>数据可视化组件库</span></div>
+          <div class="res-meta"><b>组件库</b><span>♥ 366</span></div>
+        </a>
+        <a class="res-card" href="community.html">
+          <div class="res-cover c6"><span>AI 配色助手</span></div>
+          <div class="res-meta"><b>插件</b><span>♥ 233</span></div>
+        </a>
+        <a class="res-card" href="community.html">
+          <div class="res-cover c4"><span>线性图标 1200+</span></div>
+          <div class="res-meta"><b>图标集</b><span>♥ 289</span></div>
+        </a>
+      </div>
+      <div class="section-foot">
+        <a class="btn btn-outline" href="community.html">浏览资源广场 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 对比 -->
+  <section class="section alt" id="why">
+    <div class="container">
+      <div class="section-head">
+        <h2>为什么选择像素工坊</h2>
+        <p>和传统流程比，少一点来回，多一点专注。</p>
+      </div>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>能力</th>
+              <th class="hl">像素工坊</th>
+              <th>本地软件方案</th>
+              <th>文件互传方案</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>实时多人协作</td>
+              <td class="yes">✓</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+            <tr>
+              <td>云端版本历史</td>
+              <td class="yes">✓</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+            <tr>
+              <td>自动标注与切图</td>
+              <td class="yes">✓</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+            <tr>
+              <td>插件生态开放</td>
+              <td class="yes">✓</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+            <tr>
+              <td>浏览器直接打开</td>
+              <td class="yes">✓</td><td class="no">—</td><td class="no">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section-foot">
+        <a class="btn btn-outline" href="compare.html">查看详细对比 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 更新日志 -->
+  <section class="section" id="updates">
+    <div class="container">
+      <div class="section-head">
+        <h2>保持每周迭代</h2>
+        <p>产品更新、功能预告与改进日志。</p>
+      </div>
+      <div class="updates">
+        <div class="update-item">
+          <span class="chip">v3.2 · 本周</span>
+          <div>
+            <h3>AI 布局助手 · 变体批处理</h3>
+            <p>输入一句话生成初版布局；组件变体支持批量生成与命名规范化。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="chip">v3.1</span>
+          <div>
+            <h3>设计变量 2.0 · 更快的文件加载</h3>
+            <p>颜色 / 字号 / 间距统一为设计变量并支持导出；大文件开图速度提升 40%。</p>
+          </div>
+        </div>
+        <div class="update-item">
+          <span class="chip">v3.0</span>
+          <div>
+            <h3>全新白板空间 · 多人语音</h3>
+            <p>无限画布白板上线，支持头脑风暴与飞书会议内同步协作。</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-foot">
+        <button class="btn btn-outline" data-demo="演示站：完整更新日志未接入">查看完整日志</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 大 CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>现在就把下一个想法画出来</h2>
+      <p>免费开始，邀请队友，你们的第一个项目十分钟内就能开工。</p>
+      <a class="btn btn-lg" href="login.html">免费开始使用</a>
+    </div>
+  </section>
+</main>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div>
+        <div class="footer-brand"><span class="logo-mark"></span>像素工坊</div>
+        <p style="max-width: 260px;">结构演示站：信息架构参考公开案例的学习笔记，代码与文案均为原创，不代表任何真实产品。</p>
+      </div>
+      <div class="footer-col">
+        <h4>产品</h4>
+        <a href="#features">功能总览</a>
+        <a href="download.html">下载客户端</a>
+        <a href="pricing.html">定价</a>
+        <a href="#updates">更新日志</a>
+      </div>
+      <div class="footer-col">
+        <h4>资源</h4>
+        <a href="community.html">资源广场</a>
+        <a href="community.html">插件广场</a>
+        <a href="#" data-demo="演示站：组件库未接入">组件库</a>
+        <a href="#" data-demo="演示站：字体库未接入">字体库</a>
+      </div>
+      <div class="footer-col">
+        <h4>学习</h4>
+        <a href="#" data-demo="演示站：公开课未接入">公开课</a>
+        <a href="#" data-demo="演示站：临摹活动未接入">每周临摹</a>
+        <a href="#" data-demo="演示站：打卡星球未接入">打卡星球</a>
+        <a href="#" data-demo="演示站：帮助中心未接入">帮助中心</a>
+      </div>
+      <div class="footer-col">
+        <h4>公司</h4>
+        <a href="#" data-demo="演示站：关于我们未接入">关于我们</a>
+        <a href="#" data-demo="演示站：加入我们未接入">加入我们</a>
+        <a href="#" data-demo="演示站：联系我们未接入">联系我们</a>
+        <a href="#" data-demo="演示站：媒体合作未接入">媒体合作</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 像素工坊（结构演示） · 仅用于学习演示</span>
+      <span><a href="#">用户协议</a><span class="sep">·</span><a href="#">隐私政策</a><span class="sep">·</span>简体中文</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="回到顶部">↑</button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

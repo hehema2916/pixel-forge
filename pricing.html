@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>定价 — 像素工坊（结构演示站）</title>
+<meta name="description" content="结构演示站：信息架构参考公开案例的学习笔记，代码与文案均为原创。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%236366f1'/%3E%3Crect x='9' y='9' width='14' height='14' rx='4' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="nav-logo" href="index.html"><span class="logo-mark"></span>像素工坊</a>
+    <button class="nav-burger" data-burger aria-label="打开菜单">☰</button>
+    <nav class="nav-menu" id="navMenu">
+      <div class="nav-item">
+        <button class="nav-link">产品 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="index.html#features">功能总览<small>设计、协作、交付一体化</small></a>
+          <a href="download.html">下载客户端<small>Web / macOS / Windows</small></a>
+          <a href="index.html#updates">更新日志<small>v3.2 已发布</small></a>
+          <a href="#" data-demo="演示站：企业版页面未接入">企业版<small>私有化部署与安全管控</small></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">资源 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="community.html">资源广场<small>模板 / 组件 / 图标</small></a>
+          <a href="community.html">插件广场<small>开放插件生态</small></a>
+          <a href="#" data-demo="演示站：组件库页面未接入">组件库<small>开箱即用的设计系统</small></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">学习 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="#" data-demo="演示站：公开课页面未接入">公开课<small>创作者精心策划的课程</small></a>
+          <a href="#" data-demo="演示站：临摹活动未接入">每周临摹<small>和设计师一起练手</small></a>
+          <a href="#" data-demo="演示站：打卡页面未接入">打卡星球<small>专题训练，养成技能</small></a>
+          <a href="#" data-demo="演示站：帮助中心未接入">帮助中心<small>使用指南与常见问题</small></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">社区 <span class="caret"></span></button>
+        <div class="dropdown-panel">
+          <a href="#" data-demo="演示站：文章频道未接入">最新文章<small>设计解析与行业洞察</small></a>
+          <a href="#" data-demo="演示站：活动中心未接入">活动中心<small>大赛 / 挑战 / 共创</small></a>
+          <a href="#" data-demo="演示站：创作者计划未接入">创作者计划<small>让作品被更多人看到</small></a>
+        </div>
+      </div>
+      <a class="nav-link" href="pricing.html">定价</a>
+      <a class="nav-link" href="compare.html">对比</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="login.html">登录</a>
+      <a class="btn btn-primary" href="login.html">免费使用</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge">定价</span>
+      <h1>选择适合团队的版本</h1>
+      <p>从独立设计师到百人团队，都可以免费开始，随时升级。</p>
+      <div class="billing-toggle">
+        <button class="active" data-mode="month">月付</button>
+        <button data-mode="year">年付 <span class="save">省 20%</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 24px;">
+    <div class="container">
+      <div class="plans">
+        <div class="plan">
+          <h3>免费版</h3>
+          <p class="desc">个人体验与小项目起步</p>
+          <div class="plan-price">¥<span data-price-month="0" data-price-year="0">0</span><small> <span data-unit>/月</span></small></div>
+          <ul>
+            <li>3 个协作文件</li>
+            <li>基础组件与样式</li>
+            <li>社区资源下载</li>
+            <li>Web 端使用</li>
+            <li class="dim">完整版本历史</li>
+            <li class="dim">团队与权限管理</li>
+          </ul>
+          <a class="btn btn-outline btn-block" href="login.html">免费开始</a>
+        </div>
+
+        <div class="plan">
+          <h3>专业版</h3>
+          <p class="desc">独立设计师 / 自由职业者</p>
+          <div class="plan-price">¥<span data-price-month="29" data-price-year="23">29</span><small> <span data-unit>/月</span></small></div>
+          <ul>
+            <li>无限协作文件</li>
+            <li>完整版本历史（30 天）</li>
+            <li>原型与交互功能</li>
+            <li>插件市场全量使用</li>
+            <li>全部客户端（Mac / Win）</li>
+            <li class="dim">团队与权限管理</li>
+          </ul>
+          <a class="btn btn-outline btn-block" href="login.html">选择专业版</a>
+        </div>
+
+        <div class="plan featured">
+          <span class="flag">最受欢迎</span>
+          <h3>团队版</h3>
+          <p class="desc">中小团队协作与交付</p>
+          <div class="plan-price">¥<span data-price-month="79" data-price-year="63">79</span><small> <span data-unit>/月</span></small></div>
+          <ul>
+            <li>包含专业版全部能力</li>
+            <li>无限团队空间</li>
+            <li>权限与角色管理</li>
+            <li>设计系统与组件库</li>
+            <li>开发交付（标注 / 切图 / 代码）</li>
+            <li>飞书 / 企微 / 钉钉集成</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="login.html">选择团队版</a>
+        </div>
+
+        <div class="plan">
+          <h3>企业版</h3>
+          <p class="desc">大型组织与安全合规场景</p>
+          <div class="plan-price" style="font-size:30px;">按需定制</div>
+          <ul>
+            <li>包含团队版全部能力</li>
+            <li>私有化部署选项</li>
+            <li>SSO / SAML 单点登录</li>
+            <li>安全审计与水印</li>
+            <li>专属客户成功支持</li>
+            <li>定制化培训服务</li>
+          </ul>
+          <button class="btn btn-outline btn-block" data-demo="演示站：销售咨询未接入">联系销售</button>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="section-head" style="margin-bottom: 28px;">
+          <h2 style="font-size: 26px;">常见问题</h2>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">免费版有功能限制吗？</button>
+          <div class="faq-a"><div>免费版适合体验与小项目，协作文件数量有限；升级专业版后解锁无限文件与完整版本历史。演示站价格为示例数据。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">年付如何计费？</button>
+          <div class="faq-a"><div>年付按 10 个月价格收取（约省 20%），支持随时升级，差价按剩余周期折算。演示站不会发生真实扣费。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">团队版是按下单人数计费吗？</button>
+          <div class="faq-a"><div>是的，团队版按成员数计费，占位成员可随时释放；超出免费额度的访客协作不受影响。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">可以开具发票吗？</button>
+          <div class="faq-a"><div>支持开具增值税普通发票与专用发票，在账单中心提交申请。本演示站未接入支付与开票系统。</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:0; padding-top:0;">
+      <span>© <span data-year>2026</span> 像素工坊（结构演示） · 仅用于学习演示</span>
+      <span><a href="index.html">返回首页</a><span class="sep">·</span><a href="compare.html">产品对比</a><span class="sep">·</span><a href="download.html">下载</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="回到顶部">↑</button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
